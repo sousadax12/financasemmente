@@ -6,7 +6,6 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "yarn",
   "postCreateCommand": "",
-  "postAttachCommand": "yarn dev",
   "customizations": {
     "codespaces": {
       "openFiles": ["data/blog/code-sample.mdx"]

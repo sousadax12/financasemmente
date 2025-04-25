@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# VIBE CODING CONTEXT: FINANCASEMMENTE PROJECT
+
+## PROJECT OVERVIEW
+- Repository: https://github.com/sousadax12/financasemmente
+- Stack: Next.js, TypeScript, Tailwind CSS
+- Purpose: Financial literacy blog/application
+- Core theme: "Finances in Mind" - making financial concepts accessible
+
+## CODING PRIORITIES
+1. CLARITY: Write clean, self-documenting code with proper TypeScript types
+2. AESTHETICS: Maintain consistent financial-themed design elements
+3. ACCESSIBILITY: Ensure financial tools are accessible to all users
+4. PERFORMANCE: Optimize for speed, especially with financial visualizations  
+5. MODULARITY: Build reusable components for financial data display
+
+## DEVELOPMENT APPROACH
+- Component-first: Develop isolated components before integration
+- Mobile-first: Design for smaller screens initially, then expand
+- Incremental: Make small, testable changes rather than large refactors
+- Documentation-driven: Document component purposes and props
+## DESIGN GUIDELINES
+- Color palette: Greens, blues, and neutrals for financial trust
+- Typography: Clear hierarchy for financial information comprehension
+- Whitespace: Generous spacing for complex financial information
+- Visualization: Use charts and graphs for financial data when appropriate
+
+## ASSISTANCE PREFERENCES
+- Suggest alternative approaches when reviewing code
+- Recommend performance optimizations for data-heavy components
+- Provide examples of effective financial UI patterns
+- Remind about accessibility considerations for financial tools
+- Offer suggestions for clear explanation of complex financial concepts
+
+## TECHNICAL STANDARDS
+- Follow TypeScript best practices with proper typing
+- Maintain Tailwind CSS class naming conventions
+- Use React Server Components appropriately
+- Implement responsive design patterns
+- Follow Next.js App Router conventions

@@ -2,7 +2,6 @@
 @plugin "@tailwindcss/forms";
 @plugin '@tailwindcss/typography';
 @source '../node_modules/pliny';
-@custom-variant dark (&:where(.dark, .dark *));
 
 /* Core theme configuration */
 @theme {
@@ -11,30 +10,30 @@
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   /* Colors */
-  /* Copied from https://tailwindcss.com/docs/theme#default-theme-variable-reference */
-  --color-primary-50: oklch(0.971 0.014 343.198);
-  --color-primary-100: oklch(0.948 0.028 342.258);
-  --color-primary-200: oklch(0.899 0.061 343.231);
-  --color-primary-300: oklch(0.823 0.12 346.018);
-  --color-primary-400: oklch(0.718 0.202 349.761);
-  --color-primary-500: oklch(0.656 0.241 354.308);
-  --color-primary-600: oklch(0.592 0.249 0.584);
-  --color-primary-700: oklch(0.525 0.223 3.958);
-  --color-primary-800: oklch(0.459 0.187 3.815);
-  --color-primary-900: oklch(0.408 0.153 2.432);
-  --color-primary-950: oklch(0.284 0.109 3.907);
+  /* New color palette */
+  --color-primary-50: oklch(0.971 0.014 270); /* lighter version of #8C8988 */
+  --color-primary-100: oklch(0.952 0.024 270); /* lighter version of #8C8988 */
+  --color-primary-200: oklch(0.909 0.034 270); /* lighter version of #8C8988 */
+  --color-primary-300: oklch(0.866 0.044 270); /* lighter version of #8C8988 */
+  --color-primary-400: oklch(0.776 0.064 270); /* based on #8C8988 */
+  --color-primary-500: oklch(0.686 0.074 270); /* based on #8C8988 */
+  --color-primary-600: oklch(0.596 0.084 270); /* based on #403A3A */
+  --color-primary-700: oklch(0.506 0.094 270); /* based on #403A3A */
+  --color-primary-800: oklch(0.416 0.084 270); /* based on #403A3A */
+  --color-primary-900: oklch(0.326 0.074 270); /* based on #0D0D0D */
+  --color-primary-950: oklch(0.236 0.064 270); /* based on #0D0D0D */
 
-  --color-gray-50: oklch(0.985 0.002 247.839);
-  --color-gray-100: oklch(0.967 0.003 264.542);
-  --color-gray-200: oklch(0.928 0.006 264.531);
-  --color-gray-300: oklch(0.872 0.01 258.338);
-  --color-gray-400: oklch(0.707 0.022 261.325);
-  --color-gray-500: oklch(0.551 0.027 264.364);
-  --color-gray-600: oklch(0.446 0.03 256.802);
-  --color-gray-700: oklch(0.373 0.034 259.733);
-  --color-gray-800: oklch(0.278 0.033 256.848);
-  --color-gray-900: oklch(0.21 0.034 264.665);
-  --color-gray-950: oklch(0.13 0.028 261.692);
+  --color-gray-50: oklch(0.995 0.003 40); /* based on #FFFBFA */
+  --color-gray-100: oklch(0.975 0.004 40); /* based on #FFFBFA */
+  --color-gray-200: oklch(0.929 0.006 270); /* based on #BFBEBD */
+  --color-gray-300: oklch(0.879 0.010 270); /* based on #BFBEBD */
+  --color-gray-400: oklch(0.776 0.064 270); /* based on #8C8988 */
+  --color-gray-500: oklch(0.686 0.074 270); /* based on #8C8988 */
+  --color-gray-600: oklch(0.526 0.084 270); /* based on #403A3A */
+  --color-gray-700: oklch(0.416 0.084 270); /* based on #403A3A */
+  --color-gray-800: oklch(0.326 0.074 270); /* based on #0D0D0D */
+  --color-gray-900: oklch(0.236 0.064 270); /* based on #0D0D0D */
+  --color-gray-950: oklch(0.146 0.054 270); /* based on #0D0D0D */
 
   /* Line heights */
   --line-height-11: 2.75rem;
@@ -100,21 +99,6 @@
       color: var(--color-indigo-500);
     }
   }
-
-  .prose-invert {
-    & a {
-      color: var(--color-primary-500);
-      &:hover {
-        color: var(--color-primary-400);
-      }
-      & code {
-        color: var(--color-primary-400);
-      }
-    }
-    & :where(h1, h2, h3, h4, h5, h6) {
-      color: var(--color-gray-100);
-    }
-  }
 }
 
 .task-list-item::before {
@@ -126,7 +110,7 @@
 }
 
 .footnotes {
-  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
+  @apply mt-12 border-t border-gray-200 pt-8;
 }
 
 .data-footnote-backref {
