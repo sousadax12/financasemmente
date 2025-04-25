@@ -5,7 +5,8 @@ export const generateStaticParams = async () => {
   return allBlogs.map((p) => ({ slug: p.slug.split('/').map((name) => decodeURI(name)) }))
 }
 
-export default async function BlogsRedirectPage({ params }: { params: { slug: string[] } }) {
+export default async function BlogsRedirectPage(props: { params: Promise<{ slug: string[] }> }) {
+  const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
   const post = allBlogs.find((p) => p.slug === slug)
 

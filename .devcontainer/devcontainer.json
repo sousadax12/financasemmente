@@ -23,5 +23,8 @@
       "onAutoForward": "openPreview"
     }
   },
-  "forwardPorts": [3000]
+  "forwardPorts": [3000],
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,readonly"
+  ]
 }
